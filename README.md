@@ -1,4 +1,4 @@
-# [PRJ5] Sistema para Revisões Sistemáticas da Literatura (MATA60-BD) [MARCO 1](./Documentos/[01_projeto].pdf).
+# [PRJ5] Sistema para Revisões Sistemáticas da Literatura (MATA60-BD) [MARCO 1](./Documentos/01_projeto.pdf).
 
 ## 1. Introdução e Contexto do Projeto
 
