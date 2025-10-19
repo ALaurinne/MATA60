@@ -1,8 +1,8 @@
-# [PRJ5] Sistema para Revisões Sistemáticas da Literatura (MATA60-BD) [MARCO 1](./Documents/[01_projeto].pdf).
+# [PRJ5] Sistema para Revisões Sistemáticas da Literatura (MATA60-BD) [MARCO 1](./Documentos/[01_projeto].pdf).
 
 ## 1. Introdução e Contexto do Projeto
 
-Este projeto consiste na elaboração, modelagem, implantação e otimização de um Banco de Dados para dar suporte a um **Sistema de Gerenciamento de Revisões Sistemáticas da Literatura** [PRJ5](./Documents/[PRJ5].txt). O objetivo é gerenciar eficientemente o fluxo de trabalho de pesquisadores na coleta, classificação, revisão por pares e análise de um grande volume de artigos científicos.
+Este projeto consiste na elaboração, modelagem, implantação e otimização de um Banco de Dados para dar suporte a um **Sistema de Gerenciamento de Revisões Sistemáticas da Literatura** [PRJ5](./Documentos/[PRJ5].txt). O objetivo é gerenciar eficientemente o fluxo de trabalho de pesquisadores na coleta, classificação, revisão por pares e análise de um grande volume de artigos científicos.
 
 ### Requisitos Atendidos (Original e Extendido)
 
@@ -18,7 +18,7 @@ Este projeto consiste na elaboração, modelagem, implantação e otimização d
 
 ### 2.1. Metodologia (MAD)
 
-Toda a modelagem e implementação seguiu a **Metodologia de Administração de Dados (MAD) Modelo IBA**, conforme documentado em [MAD1](./Documents/[MAD1].txt).
+Toda a modelagem e implementação seguiu a **Metodologia de Administração de Dados (MAD) Modelo IBA**, conforme documentado em [MAD1](./Documentos/[MAD1].txt).
 
 **Padrões Chave:**
 * **Nomenclatura:** `PREFIXO_NOMEOBJETO` (ex: `TB_ARTIGO`, `RL_ARTIGO_AUTOR`, `PK_PESQUISADOR`).
@@ -79,8 +79,8 @@ Para otimizar o tempo de execução dessas 30 consultas, foi desenvolvido um **P
 O projeto aplica as políticas de governança fornecidas:
 
 * **Política de Preservação de Privacidade (PPP):** Implementação de regras de **Controle de Acesso (DCL)**, definindo *roles* de `DBA`, `SISTEMA` e `ANALISE` com permissões restritas (ex: `SELECT` apenas para `ANALISE` em views).
-* **Auditoria:** Configuração de triggers (`TG_`) para rastrear modificações (INSERT/UPDATE/DELETE) em tabelas sensíveis como `TB_ARTIGO` (Requisito de Auditoria da [PPP](./Documents/[PPP1].txt)).
-* **Backup e Recuperação (PBR):** O ambiente está configurado para seguir a [PBR1](./Documents/[PBR1].txt) com backups Full semanais.
+* **Auditoria:** Configuração de triggers (`TG_`) para rastrear modificações (INSERT/UPDATE/DELETE) em tabelas sensíveis como `TB_ARTIGO` (Requisito de Auditoria da [PPP](./Documentos/[PPP1].txt)).
+* **Backup e Recuperação (PBR):** O ambiente está configurado para seguir a [PBR1](./Documentos/[PBR1].txt) com backups Full semanais.
 
 ## 6. Arquivos e Execução
 
